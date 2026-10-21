@@ -8,7 +8,7 @@
       text: string;
     }>(),
     {
-      text: 'MeterSphere',
+      text: 'VeloQA',
     }
   );
 </script>

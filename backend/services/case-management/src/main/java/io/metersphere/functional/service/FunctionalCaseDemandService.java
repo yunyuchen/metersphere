@@ -156,7 +156,7 @@ public class FunctionalCaseDemandService {
         } else {
             paramValue = systemParameter.getParamValue();
         }
-        if (StringUtils.equalsIgnoreCase(functionalCaseDemand.getDemandPlatform(), paramValue)) {
+        if (StringUtils.equalsAnyIgnoreCase(functionalCaseDemand.getDemandPlatform(), paramValue, "VeloQA")) {
             functionalCaseDemand.setDemandId(demandDTO.getDemandId());
             functionalCaseDemand.setParent("NONE");
         } else {
